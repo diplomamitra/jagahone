@@ -32,7 +32,6 @@ const tools = [
 const GrowthTools = () => {
   return (
     <section className="relative py-24 overflow-hidden bg-gradient-to-br from-[#f8faf8] via-[#f0fdf4] to-[#dcfce7]">
-      
       {/* Background Glow */}
       <div className="absolute top-0 left-0 w-[400px] h-[400px] bg-green-200/30 blur-3xl rounded-full"></div>
 
@@ -44,13 +43,10 @@ const GrowthTools = () => {
       </div>
 
       <div className="relative max-w-7xl mx-auto px-5 lg:px-10">
-        
         {/* Top Content */}
         <div className="text-center max-w-4xl mx-auto">
-          
           {/* Badge */}
           <div className="inline-flex items-center gap-2 bg-white border border-green-100 px-5 py-3 rounded-full shadow-sm">
-            
             <div className="w-2 h-2 rounded-full bg-green-600"></div>
 
             <span
@@ -74,14 +70,13 @@ const GrowthTools = () => {
             className="text-gray-600 text-[17px] sm:text-[21px] leading-9 mt-7"
             style={{ fontFamily: "mattermedium" }}
           >
-            Everything you need to automate engagement, manage reputation,
-            and grow your Google Business Profile faster.
+            Everything you need to automate engagement, manage reputation, and
+            grow your Google Business Profile faster.
           </p>
         </div>
 
         {/* Cards */}
         <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6 mt-16">
-          
           {tools.map((tool, index) => {
             const Icon = tool.icon;
 
@@ -90,7 +85,6 @@ const GrowthTools = () => {
                 key={index}
                 className="group relative bg-white/80 backdrop-blur-xl border border-green-100 rounded-[30px] p-7 shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 overflow-hidden"
               >
-                
                 {/* Hover Glow */}
                 <div className="absolute top-0 right-0 w-[120px] h-[120px] bg-green-100 blur-2xl opacity-0 group-hover:opacity-70 transition-all"></div>
 
@@ -101,7 +95,6 @@ const GrowthTools = () => {
 
                 {/* Content */}
                 <div className="relative mt-6">
-                  
                   <h3
                     className="text-[#0f172a] text-[22px] leading-tight"
                     style={{ fontFamily: "mattermedium" }}
@@ -126,24 +119,22 @@ const GrowthTools = () => {
                   <ArrowRight size={17} />
                 </button>
               </div>
-              
             );
           })}
         </div>
         {/* Bottom Button */}
-<div className="flex justify-center mt-14">
-  <button
-    className="group inline-flex items-center gap-3 bg-green-600 hover:bg-green-700 text-white px-8 sm:px-10 py-4 rounded-2xl shadow-lg hover:shadow-2xl hover:scale-[1.02] transition-all duration-300"
-    style={{ fontFamily: "mattermedium" }}
-  >
-    View All 12+ Tools
-
-    <ArrowRight
-      size={20}
-      className="group-hover:translate-x-1 transition-all duration-300"
-    />
-  </button>
-</div>
+        <div className="flex justify-center mt-14">
+          <button
+            className="group inline-flex items-center gap-3 bg-green-600 hover:bg-green-700 text-white px-8 sm:px-10 py-4 rounded-2xl shadow-lg hover:shadow-2xl hover:scale-[1.02] transition-all duration-300"
+            style={{ fontFamily: "mattermedium" }}
+          >
+            View All 12+ Tools
+            <ArrowRight
+              size={20}
+              className="group-hover:translate-x-1 transition-all duration-300"
+            />
+          </button>
+        </div>
       </div>
     </section>
   );

@@ -1,5 +1,5 @@
 import React from "react";
-import Header from "../../components/header/header";
+import Header from "../../components/header/Headerx";
 import Footer from "../../components/footer/Footer";
 
 import {
@@ -88,7 +88,7 @@ const tools = [
 
 const Tools = () => {
   return (
-    <div className="bg-[#f8faf8] overflow-hidden">
+    <div className="bg-[#f8faf8] ">
       <Header />
 
       {/* Hero */}

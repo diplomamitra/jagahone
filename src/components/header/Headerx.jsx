@@ -5,7 +5,7 @@ import { Link, NavLink } from "react-router-dom";
 
 import { TOOL_NAME, TOOL_DEV } from "../../config.js";
 
-const Header = () => {
+const Headerx = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const closeMenu = () => {
@@ -141,4 +141,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default Headerx;

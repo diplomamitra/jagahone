@@ -154,18 +154,7 @@ const AIReplySection = () => {
               </div>
             </div>
 
-            {/* CTA */}
-            <button
-              className="group mt-10 inline-flex items-center gap-3 bg-green-600 hover:bg-green-700 text-white px-7 py-4 rounded-2xl shadow-lg hover:scale-[1.02] transition-all text-lg"
-              style={{ fontFamily: "mattermedium" }}
-            >
-              Explore AI Engine
-
-              <ArrowRight
-                size={20}
-                className="group-hover:translate-x-1 transition-all"
-              />
-            </button>
+            
           </div>
         </div>
       </div>

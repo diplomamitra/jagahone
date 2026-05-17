@@ -1,5 +1,8 @@
 import { ArrowRight } from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa";
+import { Link, NavLink } from "react-router-dom";
+import Dashboard6 from '../../assets/images/dashboard6.png'
+
 
 const HeroSection = () => {
   return (
@@ -96,13 +99,14 @@ const HeroSection = () => {
               </button>
 
               {/* Secondary Button */}
-              <button
+              <NavLink
+                to="/demo"
                 className="border border-green-600 text-green-700 hover:bg-green-50 px-6 sm:px-8 py-4 rounded-2xl flex items-center justify-center gap-3 transition-all text-base sm:text-lg w-full sm:w-auto"
                 style={{ fontFamily: "mattermedium" }}
               >
                 Book Free Demo
                 <ArrowRight size={20} />
-              </button>
+              </NavLink>
             </div>
           </div>
 

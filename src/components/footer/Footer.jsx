@@ -194,24 +194,36 @@ const Footer = () => {
             className="text-sm text-gray-500 text-center md:text-left"
             style={{ fontFamily: "mattermedium" }}
           >
-            © 2026 {TOOL_NAME} Private Limited
+            © 2026 {TOOL_NAME} Tool By HarjeetDevx
           </p>
 
           <div
             className="flex flex-wrap items-center justify-center gap-5 text-sm text-gray-500"
             style={{ fontFamily: "mattermedium" }}
           >
-            <span className="hover:text-green-600 transition cursor-pointer">
+            <NavLink
+            to="/terms-and-conditions"
+            className="hover:text-green-600 transition cursor-pointer">
               Terms & Conditions
-            </span>
+            </NavLink>
 
-            <span className="hover:text-green-600 transition cursor-pointer">
+            <NavLink
+            to="/privacy-policy"
+            className="hover:text-green-600 transition cursor-pointer">
               Privacy Policy
-            </span>
+            </NavLink>
 
-            <span className="hover:text-green-600 transition cursor-pointer">
+            <NavLink
+            to='/refund-policy'
+            className="hover:text-green-600 transition cursor-pointer">
               Refund Policy
-            </span>
+            </NavLink>
+
+            <NavLink
+            to='/terms-of-service-ai'
+            className="hover:text-green-600 transition cursor-pointer">
+              Terms of AI Usage
+            </NavLink>
           </div>
         </div>
       </div>

@@ -9,6 +9,7 @@ import DemoPage from "./layout/DemoPage/DemoPage";
 import TermsConditions from "./layout/TermsConditions";
 import PrivacyPolicy from "./layout/PrivacyPolicy";
 import RefundPolicy from "./layout/RefundPolicy";
+import TermsOfServiceAI from "./layout/TermsOfServiceAI";
 
 const App = () => {
   return (
@@ -27,6 +28,7 @@ const App = () => {
         <Route path="/terms-and-conditions" element={<TermsConditions />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/refund-policy" element={<RefundPolicy />} />
+        <Route path="/terms-of-service-ai" element={<TermsOfServiceAI />} />
       </Routes>
     </BrowserRouter>
   );

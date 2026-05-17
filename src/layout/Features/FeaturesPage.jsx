@@ -8,7 +8,7 @@ import {
   ArrowRight,
   Check,
 } from "lucide-react";
-import Header from "../../components/header/header";
+import Header from "../../components/header/Headerx";
 import Footer from "../../components/footer/Footer";
 
 const features = [

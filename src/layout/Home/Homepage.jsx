@@ -1,5 +1,5 @@
 import React from "react";
-import Header from "../../components/header/header";
+import Header from "../../components/header/Headerx";
 import HeroSection from "./HeroSection";
 import TrustBus from "./TrustBus";
 import RankTrackingSection from "./RankTrackingSection";
