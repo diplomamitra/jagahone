@@ -1,5 +1,5 @@
 import { ArrowRight, Check } from "lucide-react";
-import Dashboard from "../../assets/images/Dashboard22.png";
+// import Dashboard from "../../assets/images/Dashboard22.png";
 import { Link, NavLink } from "react-router-dom";
 
 const RankTrackingSection = () => {
@@ -148,7 +148,7 @@ const RankTrackingSection = () => {
 
               {/* Image */}
               <img
-                src={Dashboard}
+                src=""
                 alt="Dashboard Preview"
                 className="w-full max-w-[650px] rounded-[24px] object-contain"
               />
