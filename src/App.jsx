@@ -1,9 +1,5 @@
 import React from "react";
-import {
-  BrowserRouter,
-  Routes,
-  Route,
-} from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import MainLayout from "./layout/MainLayout";
 
@@ -19,18 +15,18 @@ import RefundPolicy from "./layout/RefundPolicy";
 import TermsOfServiceAI from "./layout/TermsOfServiceAI";
 
 import ScrollToTop from "./components/ScrollToTop";
+import ApprovalPendingPage from "./layout/ApprovalPendingPage";
 
 const App = () => {
   return (
     <BrowserRouter>
-
       <ScrollToTop />
 
       <Routes>
-
         {/* Layout Wrapper */}
         <Route element={<MainLayout />}>
-
+          {/* Auth */}
+          <Route path="/dashboard" element={<ApprovalPendingPage />} />
           {/* Main Pages */}
           <Route path="/" element={<Homepage />} />
           <Route path="/features" element={<FeaturesPage />} />
@@ -39,28 +35,14 @@ const App = () => {
           <Route path="/demo" element={<DemoPage />} />
 
           {/* Legal Pages */}
-          <Route
-            path="/terms-and-conditions"
-            element={<TermsConditions />}
-          />
+          <Route path="/terms-and-conditions" element={<TermsConditions />} />
 
-          <Route
-            path="/privacy-policy"
-            element={<PrivacyPolicy />}
-          />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
 
-          <Route
-            path="/refund-policy"
-            element={<RefundPolicy />}
-          />
+          <Route path="/refund-policy" element={<RefundPolicy />} />
 
-          <Route
-            path="/terms-of-service-ai"
-            element={<TermsOfServiceAI />}
-          />
-
+          <Route path="/terms-of-service-ai" element={<TermsOfServiceAI />} />
         </Route>
-
       </Routes>
     </BrowserRouter>
   );

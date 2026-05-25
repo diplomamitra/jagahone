@@ -68,7 +68,7 @@ const Headerx = () => {
             <div className="w-[1px] h-6 bg-gray-300"></div>
 
             <a
-              href="#"
+              href="/dashboard"
               className="text-[#0f172a] hover:text-green-600 transition"
             >
               Dashboard
