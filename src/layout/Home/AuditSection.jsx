@@ -1,5 +1,5 @@
 import { Check } from "lucide-react";
-import Dashboard from "../../assets/images/Dashboard14.png";
+import Dashboard from "../../assets/images/dashboard14.png";
 import { Link, NavLink } from "react-router-dom";
 
 
