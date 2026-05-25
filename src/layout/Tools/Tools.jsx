@@ -90,7 +90,6 @@ const tools = [
 const Tools = () => {
   return (
     <div className="bg-[#f8faf8] ">
-      <Header />
 
       {/* Hero */}
       <section className="relative py-24 overflow-hidden bg-[radial-gradient(circle_at_top_left,_#dcfce7_0%,_#f0fdf4_35%,_#f8faf8_70%)]">
@@ -318,7 +317,6 @@ const Tools = () => {
 
       <Banner />
 
-      <Footer />
     </div>
   );
 };

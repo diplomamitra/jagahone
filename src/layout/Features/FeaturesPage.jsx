@@ -54,7 +54,6 @@ const features = [
 const FeaturesPage = () => {
   return (
     <div>
-      <Header />
 
       <section className="relative overflow-hidden bg-[radial-gradient(circle_at_top_left,_#dcfce7_0%,_#f0fdf4_35%,_#f8faf8_70%)] py-24">
         {/* Glow Effects */}
@@ -295,7 +294,6 @@ const FeaturesPage = () => {
           </div>
         </div>
       </section>
-      <Footer />
     </div>
   );
 };

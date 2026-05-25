@@ -12,7 +12,6 @@ import Footer from "../../components/footer/Footer";
 const Homepage = () => {
   return (
     <div>
-      <Header />
       <HeroSection />
       <TrustBus />
       <RankTrackingSection />
@@ -20,7 +19,6 @@ const Homepage = () => {
       <AIReplySection />
       <GrowthTools />
       <Banner />
-      <Footer />
     </div>
   );
 };

@@ -13,7 +13,6 @@ import {
 const DemoPage = () => {
   return (
     <div className="bg-[#f8faf8] overflow-hidden">
-      <Header />
 
       <section className="relative overflow-hidden bg-[radial-gradient(circle_at_top_left,_#dcfce7_0%,_#f0fdf4_35%,_#f8faf8_70%)] py-24">
         
@@ -334,7 +333,6 @@ const DemoPage = () => {
         </div>
       </section>
 
-      <Footer />
     </div>
   );
 };
