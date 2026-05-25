@@ -9,6 +9,7 @@ import {
 } from "lucide-react";
 import Header from "../../components/header/Headerx";
 import Footer from "../../components/footer/Footer";
+import { Link, NavLink } from "react-router-dom";
 
 const About = () => {
   return (
@@ -400,7 +401,8 @@ const About = () => {
               automated, and practical for modern businesses.
             </p>
 
-            <button
+            <NavLink
+              to="/demo"
               className="group mt-10 inline-flex items-center gap-3 bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-2xl shadow-lg hover:scale-[1.02] transition-all"
               style={{ fontFamily: "mattermedium" }}
             >
@@ -409,7 +411,7 @@ const About = () => {
                 size={20}
                 className="group-hover:translate-x-1 transition-all"
               />
-            </button>
+            </NavLink>
           </div>
         </div>
       </section>

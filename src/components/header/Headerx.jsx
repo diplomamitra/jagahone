@@ -39,7 +39,7 @@ const Headerx = () => {
               </h1>
             </div>
 
-            <span className="text-[11px] text-gray-500 ml-9 -mt-1 tracking-wide">
+            <span className="text-[11px] text-[#008236] ml-9 -mt-1 tracking-wide font-[mattermedium]">
               A Product by {TOOL_DEV}
             </span>
           </Link>

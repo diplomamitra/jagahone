@@ -10,6 +10,8 @@ import {
 } from "lucide-react";
 import Header from "../../components/header/Headerx";
 import Footer from "../../components/footer/Footer";
+import { Link, NavLink } from "react-router-dom";
+
 
 const features = [
   {
@@ -33,13 +35,12 @@ const features = [
   {
     title: "AI Review Responses",
     description:
-      "Generate professional and contextual AI-powered customer review replies in seconds.",
+      "Generate professional, personalized review replies in seconds with AI assistance.",
     icon: Bot,
   },
   {
-    title: "AI Content Scheduling",
-    description:
-      "Create and schedule Google Posts automatically using AI-generated content and visuals.",
+    title: "GBP Post Scheduling",
+    description: "Schedule and manage Google Business Profile posts with ease.",
     icon: CalendarDays,
   },
   {
@@ -133,21 +134,6 @@ const FeaturesPage = () => {
                       {feature.description}
                     </p>
                   </div>
-
-                  {/* Bottom Link */}
-                  <div className="relative mt-8 inline-flex items-center gap-2 text-green-700">
-                    <span
-                      className="text-sm"
-                      style={{ fontFamily: "mattermedium" }}
-                    >
-                      Explore Feature
-                    </span>
-
-                    <ArrowRight
-                      size={16}
-                      className="group-hover:translate-x-1 transition-all"
-                    />
-                  </div>
                 </div>
               );
             })}
@@ -227,7 +213,8 @@ const FeaturesPage = () => {
                 </div>
 
                 {/* CTA */}
-                <button
+                <NavLink
+                  to="/tools"
                   className="group mt-10 inline-flex items-center gap-3 bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-2xl shadow-lg hover:scale-[1.02] transition-all"
                   style={{ fontFamily: "mattermedium" }}
                 >
@@ -236,7 +223,7 @@ const FeaturesPage = () => {
                     size={20}
                     className="group-hover:translate-x-1 transition-all"
                   />
-                </button>
+                </NavLink>
               </div>
 
               {/* Right Dashboard Mock */}

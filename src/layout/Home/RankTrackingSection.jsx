@@ -1,5 +1,6 @@
 import { ArrowRight, Check } from "lucide-react";
-import Dashboard from "../../assets/images/Dashboard4.png";
+import Dashboard from "../../assets/images/Dashboard22.png";
+import { Link, NavLink } from "react-router-dom";
 
 const RankTrackingSection = () => {
   return (
@@ -48,14 +49,10 @@ const RankTrackingSection = () => {
               opportunities with smart AI insights.
             </p>
 
-            
-
             {/* Features */}
             <div className="space-y-5 mt-10">
-              
               {/* Feature */}
               <div className="flex items-start gap-4">
-                
                 <div className="min-w-[38px] h-[38px] rounded-xl bg-green-100 flex items-center justify-center">
                   <Check className="w-4 h-4 text-green-600 stroke-[3]" />
                 </div>
@@ -66,7 +63,6 @@ const RankTrackingSection = () => {
                     style={{ fontFamily: "mattermedium" }}
                   >
                     Accurate Local Grid Tracking
-
                   </h4>
 
                   <p
@@ -74,15 +70,12 @@ const RankTrackingSection = () => {
                     style={{ fontFamily: "mattermedium" }}
                   >
                     Monitor rankings across multiple nearby locations.
-
-
                   </p>
                 </div>
               </div>
 
               {/* Feature */}
               <div className="flex items-start gap-4">
-                
                 <div className="min-w-[38px] h-[38px] rounded-xl bg-green-100 flex items-center justify-center">
                   <Check className="w-4 h-4 text-green-600 stroke-[3]" />
                 </div>
@@ -100,14 +93,12 @@ const RankTrackingSection = () => {
                     style={{ fontFamily: "mattermedium" }}
                   >
                     Understand where your business performs best.
-
                   </p>
                 </div>
               </div>
 
               {/* Feature */}
               <div className="flex items-start gap-4">
-                
                 <div className="min-w-[38px] h-[38px] rounded-xl bg-green-100 flex items-center justify-center">
                   <Check className="w-4 h-4 text-green-600 stroke-[3]" />
                 </div>
@@ -125,24 +116,24 @@ const RankTrackingSection = () => {
                     style={{ fontFamily: "mattermedium" }}
                   >
                     Access ranking trends and performance metrics instantly.
-
                   </p>
                 </div>
               </div>
             </div>
 
             {/* CTA */}
-            <button
+            <NavLink
+              to="/demo"
               className="mt-10 inline-flex items-center gap-3 bg-green-600 hover:bg-green-700 text-white px-7 py-4 rounded-2xl shadow-lg hover:scale-[1.02] transition-all text-lg"
               style={{ fontFamily: "mattermedium" }}
             >
               Explore Rank Tracking
               <ArrowRight size={20} />
-            </button>
+            </NavLink>
           </div>
 
           {/* Right Side */}
-          <div className="relative flex justify-center lg:justify-end">
+          <div className="relative flex justify-center lg:justify-end border border-gray-200 rounded-4xl">
             {/* Glow */}
             <div className="absolute top-10 w-[450px] h-[450px] bg-green-200 rounded-full blur-3xl opacity-40"></div>
 

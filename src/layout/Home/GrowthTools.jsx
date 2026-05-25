@@ -6,6 +6,8 @@ import {
   ArrowRight,
 } from "lucide-react";
 
+import { Link, NavLink } from "react-router-dom";
+
 const tools = [
   {
     title: "Review QR Generator",
@@ -124,7 +126,8 @@ const GrowthTools = () => {
         </div>
         {/* Bottom Button */}
         <div className="flex justify-center mt-14">
-          <button
+          <NavLink
+            to="/tools"
             className="group inline-flex items-center gap-3 bg-green-600 hover:bg-green-700 text-white px-8 sm:px-10 py-4 rounded-2xl shadow-lg hover:shadow-2xl hover:scale-[1.02] transition-all duration-300"
             style={{ fontFamily: "mattermedium" }}
           >
@@ -133,7 +136,7 @@ const GrowthTools = () => {
               size={20}
               className="group-hover:translate-x-1 transition-all duration-300"
             />
-          </button>
+          </NavLink>
         </div>
       </div>
     </section>

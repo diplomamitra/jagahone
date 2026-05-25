@@ -1,5 +1,7 @@
 import { Check } from "lucide-react";
-import Dashboard from "../../assets/images/Dashboard5.png";
+import Dashboard from "../../assets/images/Dashboard14.png";
+import { Link, NavLink } from "react-router-dom";
+
 
 const AuditSection = () => {
   return (
@@ -123,7 +125,7 @@ const AuditSection = () => {
           </div>
 
           {/* Right Side */}
-          <div className="relative flex justify-center lg:justify-end">
+          <div className="relative flex justify-center lg:justify-end border border-gray-200 rounded-4xl">
             {/* Glow */}
             <div className="absolute top-10 w-[420px] h-[420px] bg-green-200 rounded-full blur-3xl opacity-40"></div>
 

@@ -16,6 +16,7 @@ import {
   ShieldCheck,
   SearchCheck,
 } from "lucide-react";
+import Banner from "../Home/Banner";
 
 const tools = [
   {
@@ -57,7 +58,7 @@ const tools = [
   {
     title: "AI Google Posts",
     description:
-      "Generate AI-powered Google Posts with smart captions and promotional content instantly.",
+      "Generate Google Business Profile posts with AI-assisted captions and content suggestions.",
     icon: Sparkles,
   },
   {
@@ -93,7 +94,6 @@ const Tools = () => {
 
       {/* Hero */}
       <section className="relative py-24 overflow-hidden bg-[radial-gradient(circle_at_top_left,_#dcfce7_0%,_#f0fdf4_35%,_#f8faf8_70%)]">
-        
         {/* Glow */}
         <div className="absolute top-0 left-0 w-[450px] h-[450px] bg-green-200/40 blur-3xl rounded-full"></div>
 
@@ -105,13 +105,10 @@ const Tools = () => {
         </div>
 
         <div className="relative max-w-7xl mx-auto px-5 lg:px-10">
-          
           {/* Top */}
           <div className="text-center max-w-4xl mx-auto">
-            
             {/* Badge */}
             <div className="inline-flex items-center gap-2 bg-white border border-green-100 px-5 py-3 rounded-full shadow-sm">
-              
               <div className="w-2 h-2 rounded-full bg-green-600"></div>
 
               <span
@@ -135,22 +132,18 @@ const Tools = () => {
               className="text-gray-600 text-[18px] sm:text-[22px] leading-9 mt-8"
               style={{ fontFamily: "mattermedium" }}
             >
-              Stop paying for multiple micro-services. JagahOne combines
-              review generation, AI automation, local SEO utilities,
-              WhatsApp engagement, analytics, and growth tools into one platform.
+              Stop paying for multiple tools. JagahOne combines review
+              management, local SEO tools, WhatsApp engagement, analytics, and
+              business growth features into one centralized platform.
             </p>
           </div>
 
           {/* Feature Highlight */}
           <div className="relative mt-20 bg-white/80 backdrop-blur-xl border border-green-100 rounded-[40px] overflow-hidden shadow-[0_20px_80px_rgba(0,0,0,0.06)]">
-            
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 items-center px-8 sm:px-14 py-14 sm:py-20">
-              
               {/* Left */}
               <div>
-                
                 <div className="inline-flex items-center gap-2 bg-green-50 border border-green-100 px-5 py-3 rounded-full">
-                  
                   <div className="w-2 h-2 rounded-full bg-green-600"></div>
 
                   <span
@@ -172,21 +165,19 @@ const Tools = () => {
                   className="text-gray-600 text-[17px] sm:text-[21px] leading-9 mt-7"
                   style={{ fontFamily: "mattermedium" }}
                 >
-                  Manage reviews, automate WhatsApp campaigns, optimize
-                  local SEO, schedule content, monitor rankings, and
-                  improve reputation — all from one centralized dashboard.
+                  Manage reviews, automate WhatsApp campaigns, optimize local
+                  SEO, schedule content, monitor rankings, and improve
+                  reputation — all from one centralized dashboard.
                 </p>
 
                 {/* Features */}
                 <div className="space-y-5 mt-10">
-                  
                   {[
                     "AI-powered local SEO utilities",
                     "Review growth & reputation tools",
                     "Built for local businesses & agencies",
                   ].map((item, i) => (
                     <div key={i} className="flex items-center gap-4">
-                      
                       <div className="w-9 h-9 rounded-xl bg-green-100 flex items-center justify-center">
                         <div className="w-2 h-2 rounded-full bg-green-600"></div>
                       </div>
@@ -207,7 +198,6 @@ const Tools = () => {
                   style={{ fontFamily: "mattermedium" }}
                 >
                   Explore All Utilities
-
                   <ArrowRight
                     size={20}
                     className="group-hover:translate-x-1 transition-all"
@@ -217,13 +207,11 @@ const Tools = () => {
 
               {/* Right Mock Dashboard */}
               <div className="relative">
-                
                 {/* Glow */}
                 <div className="absolute top-10 w-[420px] h-[420px] bg-green-200 rounded-full blur-3xl opacity-40"></div>
 
                 {/* Window */}
                 <div className="relative bg-white border border-gray-200 rounded-[36px] p-5 shadow-[0_25px_80px_rgba(0,0,0,0.10)]">
-                  
                   {/* Top Dots */}
                   <div className="flex items-center gap-2 mb-5 px-2">
                     <div className="w-3 h-3 rounded-full bg-red-400"></div>
@@ -233,7 +221,6 @@ const Tools = () => {
 
                   {/* Mock Content */}
                   <div className="grid grid-cols-2 gap-4">
-                    
                     {tools.slice(0, 4).map((tool, index) => {
                       const Icon = tool.icon;
 
@@ -260,19 +247,15 @@ const Tools = () => {
 
                     {/* Bottom Large */}
                     <div className="col-span-2 bg-white rounded-2xl border border-gray-100 p-5">
-                      
                       <div className="flex justify-between items-center">
-                        
                         <div className="h-3 w-28 bg-gray-200 rounded-full"></div>
 
                         <div className="h-8 w-20 bg-green-100 rounded-xl"></div>
                       </div>
 
                       <div className="space-y-4 mt-6">
-                        
                         {[1, 2, 3].map((_, i) => (
                           <div key={i} className="flex items-center gap-4">
-                            
                             <div className="w-10 h-10 rounded-xl bg-green-100"></div>
 
                             <div className="flex-1">
@@ -294,7 +277,6 @@ const Tools = () => {
 
           {/* Tools Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-7 mt-20">
-            
             {tools.map((tool, index) => {
               const Icon = tool.icon;
 
@@ -303,7 +285,6 @@ const Tools = () => {
                   key={index}
                   className="group relative bg-white/80 backdrop-blur-xl border border-green-100 rounded-[32px] p-8 shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 overflow-hidden"
                 >
-                  
                   {/* Hover Glow */}
                   <div className="absolute top-0 right-0 w-[140px] h-[140px] bg-green-100 blur-2xl opacity-0 group-hover:opacity-70 transition-all"></div>
 
@@ -314,7 +295,6 @@ const Tools = () => {
 
                   {/* Content */}
                   <div className="relative mt-7">
-                    
                     <h3
                       className="text-[#0f172a] text-[24px] leading-tight"
                       style={{ fontFamily: "mattermedium" }}
@@ -329,28 +309,14 @@ const Tools = () => {
                       {tool.description}
                     </p>
                   </div>
-
-                  {/* Bottom Link */}
-                  <div className="relative mt-8 inline-flex items-center gap-2 text-green-700">
-                    
-                    <span
-                      className="text-sm"
-                      style={{ fontFamily: "mattermedium" }}
-                    >
-                      Explore Utility
-                    </span>
-
-                    <ArrowRight
-                      size={16}
-                      className="group-hover:translate-x-1 transition-all"
-                    />
-                  </div>
                 </div>
               );
             })}
           </div>
         </div>
       </section>
+
+      <Banner />
 
       <Footer />
     </div>
